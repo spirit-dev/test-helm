@@ -28,9 +28,9 @@ ingress:
       hosts:
         - joal.example.org
 
-volumes: {}
+volumes: []
 
-volumeMounts: {}
+volumeMounts: []
 
 podSecurityContext: {}
 
