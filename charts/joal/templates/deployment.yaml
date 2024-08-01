@@ -19,8 +19,10 @@ spec:
         app: {{ template "joal.name" . }}
         release: {{ .Release.Name }}
     spec:
+    {{- with .Values.volumes }}
       volumes:
 {{ toYaml .Values.volumes | indent 6 }}
+    {{- end }}
       securityContext:
 {{ toYaml .Values.podSecurityContext | indent 8 }}
       containers:
@@ -35,8 +37,10 @@ spec:
               protocol: TCP
           securityContext:
 {{ toYaml .Values.securityContext | indent 12 }}
+    {{- with .Values.volumeMounts }}
           volumeMounts:
 {{ toYaml .Values.volumeMounts | indent 12 }}
+    {{- end }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
