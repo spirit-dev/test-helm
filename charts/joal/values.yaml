@@ -27,7 +27,6 @@ ingress:
     - secretName: joal.example.org
       hosts:
         - joal.example.org
-        
 
 volumes:
   - name: myvolume
