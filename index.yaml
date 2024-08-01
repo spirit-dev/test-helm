@@ -19,4 +19,22 @@ entries:
     urls:
     - https://github.com/spirit-dev/test-helm/releases/download/joal-2.1.36/joal-2.1.36.tgz
     version: 2.1.36
-generated: "2024-08-01T16:12:04.64571811Z"
+  - apiVersion: v2
+    appVersion: 2.1.36
+    created: "2024-08-01T16:47:25.089425566Z"
+    description: JOAL is not designed to help or encourage you downloading illegal
+      materials ! You must respect the law applicable in your country. I couldn't
+      be held responsible for illegal activities performed by your usage of JOAL.
+    digest: 5d65f733071eb66dafe5b11497478ecf2e296b7f1e5d17c660311fe99106b82e
+    home: https://github.com/spirit-dev/test-helm
+    icon: https://spirit-dev.github.io/test-helm/joal/logo/joal.png
+    keywords:
+    - torrent
+    - joal
+    name: joal
+    sources:
+    - https://github.com/spirit-dev/test-helm
+    urls:
+    - https://github.com/spirit-dev/test-helm/releases/download/joal-1.0.0/joal-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-08-01T16:47:25.089439381Z"
