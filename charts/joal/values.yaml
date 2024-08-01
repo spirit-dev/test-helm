@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: tbbd
-  tag: tbd
+  repository: anthonyraymond/joal
+  tag: latest
   pullPolicy: IfNotPresent
 
 dnsPolicy: "None"

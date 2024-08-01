@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: tbbd
-  tag: tbd
+  repository: anthonyraymond/joal
+  tag: latest
   pullPolicy: IfNotPresent
 
 dnsPolicy: "None"
@@ -28,15 +28,9 @@ ingress:
       hosts:
         - joal.example.org
 
-volumes:
-  - name: myvolume
-    persistentVolumeClaim:
-      claimName: myvolume
+volumes: {}
 
-volumeMounts:
-  - name: myvolume
-    mountPath: "/volume"
-    subPath: "a/sub/path"
+volumeMounts: {}
 
 podSecurityContext: {}
 
